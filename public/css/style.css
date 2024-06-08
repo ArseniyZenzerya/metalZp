@@ -1,0 +1,78 @@
+/*TODO: Transfer to file */
+@font-face {
+    font-family: "Neue Machina Regular";
+    src: url("https://db.onlinewebfonts.com/t/38d41072aa88a50711d4d50dd0d50f6b.eot");
+    src: url("https://db.onlinewebfonts.com/t/38d41072aa88a50711d4d50dd0d50f6b.eot?#iefix")format("embedded-opentype"),
+    url("https://db.onlinewebfonts.com/t/38d41072aa88a50711d4d50dd0d50f6b.woff2")format("woff2"),
+    url("https://db.onlinewebfonts.com/t/38d41072aa88a50711d4d50dd0d50f6b.woff")format("woff"),
+    url("https://db.onlinewebfonts.com/t/38d41072aa88a50711d4d50dd0d50f6b.ttf")format("truetype"),
+    url("https://db.onlinewebfonts.com/t/38d41072aa88a50711d4d50dd0d50f6b.svg#Neue Machina Regular")format("svg");
+}
+
+:root {
+	--column-width: 1160px;
+	--offset: calc(50% - (var(--column-width) / 2));
+	--color-filter-icons: invert(100%);
+    --color-bg: #202020;
+    --color-white: #fff;
+    --color-main-orange: #FD6909;
+    --main-font: 'Unbounded';
+    --color-dark-grey: #141414;
+    --color-light-grey: #2C2C2C;
+}
+
+
+* {
+	box-sizing: border-box;
+	outline: none !important;
+	-webkit-tap-highlight-color: transparent;
+}
+
+body, dl, dt, dd, ul, ol, li, form, table, tr, td, h1, h2, h3, h4, h5, h6, pre, p, span, b, i, input, textarea, fieldset {
+	margin: 0;
+	padding: 0;
+}
+
+.container {
+	padding-left: var(--offset);
+	padding-right: var(--offset);
+}
+
+.container-offset {
+	width: var(--column-width);
+	margin-left: auto;
+	margin-right: auto;
+}
+
+@media (max-width: 1300px) {
+	:root {
+		--column-width: 750px;
+	}
+}
+
+@media (max-width: 769px) {
+	:root {
+		--column-width: calc(100% - 30px);
+	}
+}
+
+
+body {
+    background: var(--color-bg);
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+
+.slick-dots li button:before {
+    color: var(--color-white) !important;
+}
+.slick-dots li.slick-active button:before {
+    color: var(--color-main-orange) !important;
+}
+.slick-dots li {
+    margin: 0 -2px !important;
+}
